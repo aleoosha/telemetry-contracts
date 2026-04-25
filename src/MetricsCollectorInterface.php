@@ -20,4 +20,9 @@ interface MetricsCollectorInterface
      * Get the hardware specifications of the current environment.
      */
     public function getHardwareContext(): HardwareContext;
+
+    /**
+     * Add this method to the interface!
+     */
+    public function recordApiLatency(float $milliseconds): void;
 }
